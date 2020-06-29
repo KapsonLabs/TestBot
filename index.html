@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>FIDA Sample Web Chat</title> 
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- This styling is for the canvas demonstration purposes. It is recommended 
 that style is moved to separate file for organization in larger projects -->
     <style>
@@ -37,6 +38,23 @@ that style is moved to separate file for organization in larger projects -->
             width: 60%;
             top: 50px;
             overflow: hidden;
+        }
+        @media only screen and (max-width: 600px) {
+            .heading {
+                background-color:black;
+                height: 50px;
+            }
+            .main {
+                margin: 18px;
+                border-radius: 4px;
+            }
+            #webchat {
+                position: fixed;
+                height: calc(100% - 50px);
+                width: 100%;
+                top: 50px;
+                overflow: hidden;
+            }
         }
       </style>
 </head>
